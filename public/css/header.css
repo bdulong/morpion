@@ -1,0 +1,41 @@
+ul {
+    position: fixed;
+    top: 1;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3C5180;
+    z-index: 1;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 32px;
+    text-decoration: none;  
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #222f4a;
+  }
+  
+  .active {
+    background-color: #222f4a;
+  }
+
+.liens_header {
+    margin-top: 7px;
+    font-size: 16px;
+    font-family: 'OpenSans-Regular';
+}
+
+.icone_header {
+    margin-top: 7px;
+}

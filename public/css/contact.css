@@ -1,0 +1,19 @@
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.formulaire {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.titre_contact {
+    margin-right: 420px;
+    font-family: 'Ysabeau-Bold';
+    font-size: 52px;
+}
