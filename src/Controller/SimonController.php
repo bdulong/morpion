@@ -15,12 +15,4 @@ class SimonController extends AbstractController
             'controller_name' => 'SimonController',
         ]);
     }
-
-    #[Route('/michael', name: 'michael')]
-    public function index(): Response
-    {
-        return $this->render('simon/michael.html.twig', [
-            'controller_name' => 'michael',
-        ]);
-    }
 }

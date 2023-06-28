@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Ysabeau-Bold';
+    src: url('../police/Ysabeau-Bold.ttf');
+  }
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('../police/OpenSans-Regular.ttf');
+}
+
+.titre-stat {
+  color: #4E6AA6;
+  font-size: 100px;
+  font-family: 'Ysabeau-Bold';
+}
+
+.texte-stat {
+  font-size: 20px;
+  font-family: 'OpenSans-Regular';
+}

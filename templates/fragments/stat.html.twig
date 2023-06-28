@@ -1,0 +1,73 @@
+{% set pourcentageEtudiants = '58%' %}
+{% set articlesDisponibles = '638' %}
+
+<div class="container">
+  <div class="column">
+    <img class="vector" src="{{ asset('images/guillemet.svg') }}">
+    <h2 class="titre-stat">{{ pourcentageEtudiants }}</h2>
+    <p class="texte-stat">des étudiants utilisent régulièrement le Yearbook pour consulter des articles.</p>
+  </div>
+
+  <div class="column">
+    <img class="vector" src="{{ asset('images/guillemet.svg') }}">
+    <h2 class="titre-stat">{{ articlesDisponibles }}</h2>
+    <p class="texte-stat">articles sont disponibles sur le site du Yearbook écrits par 36 personnes.</p>
+  </div>
+</div>
+
+<style>
+body{
+    margin: 0;
+}
+
+.container {
+display: flex;
+justify-content: center;
+}
+
+.column {
+flex: 1;
+padding: 10px;
+text-align: center;
+position: relative;
+max-width: 400px; /* Définissez la largeur maximale souhaitée */
+margin: 0 auto; /* Centre les blocs de texte horizontalement */
+}
+
+.vector {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: -1;
+}
+
+@media (max-width: 600px) {
+/* Modifiez la largeur de la fenêtre en fonction de votre besoin */
+.container {
+flex-direction: column; /* Les blocs de texte passent à la suite */
+}
+}
+
+@font-face {
+  font-family: 'Ysabeau-Bold';
+  src: url('{{ asset('polices/Ysabeau-Bold.ttf') }}');
+}
+
+@font-face {
+  font-family: 'OpenSans-Regular';
+  src: url('{{ asset('polices/OpenSans-Regular.ttf') }}');
+}
+
+.titre-stat {
+  color: #4E6AA6;
+  font-size: 100px;
+  font-family: 'Ysabeau-Bold';
+}
+
+.texte-stat {
+  font-size: 20px;
+  font-family: 'OpenSans-Regular';
+}
+ 
+</style>
