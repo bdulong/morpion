@@ -1,7 +1,13 @@
 @font-face {
   font-family: "Ysabeau";
-  src: url('"C:\MAMP\htdocs\dingue\Ysabeau-VariableFont_wght.ttf"');
+  src: url('../polices/Ysabeau-VariableFont_wght.ttf');
 }
+
+@font-face {
+  font-family: "Ysabeau";
+  src: url('../polices/OpenSans-VariableFont_wght.ttf');
+}
+
 @media (max-width: 768px) {
   .home_card {
     max-width: 350px;
@@ -479,21 +485,26 @@ justify-content: space-between;
 }
 
 .slider-infinite-carrousel-card{
-  height:300px;
-  width:300px;
+  max-height:300px;
+  max-width:300px;
   border-radius: 20px;
   display:flex;
   align-self: center;
-  padding:15px;
-  perspective:150px;
-
+  margin:15px;
+  overflow: hidden;
 }
 .slider-infinite-carrousel-card img{
   width:100%;
-  transition: transform 1s;
+  height:100%;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
-.slider-infinite-carrousel-card img:hover{
-  transform:translateZ(20px);
+
+.slider-infinite-carrousel-card:hover img{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 .slider-infinite-carrousel::before,
 .slider-infinite-carrousel::after{
@@ -791,11 +802,11 @@ justify-content: space-between;
 
 @font-face {
   font-family: "Ysabeau-Regular";
-  src: url(../static/Ysabeau-Medium.ttf);
+  src: url('../polices/Ysabeau-Medium.ttf');
 }
 @font-face {
   font-family: "OpenSans-Regular";
-  src: url(../static/OpenSans-Regular.ttf);
+  src: url('../polices/OpenSans-Regular.ttf');
 }
 
 .Home-Recent-Content {
