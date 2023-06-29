@@ -1,0 +1,67 @@
+<div class="article_page_quote">
+    <div class="part_1">
+    <img class="illustration_14" src={{ asset('images/img12.png') }} />
+    <img class="illustration_142" src={{ asset('images/img13.png') }} />
+    <div class="wrtitten_content_14">
+        <h2 class="quote_14 mid_text">
+        Dans ce contexte, impossible de mettre en doute la difficulté des
+        jeunes générations à se projeter.
+        </h2>
+        <p class="author_14 text">Grégoire Charassin</p>
+    </div>
+    </div>
+</div>
+
+<style>
+@font-face {
+font-family: "Ysabeau Bold";
+src: {{ asset('../typo/Ysabeau-Bold.ttf') }};
+}
+@font-face {
+font-family: "OpenSans-Regular";
+src: {{ asset('../typo/OpenSans-Regular.ttf') }};
+}
+.title {
+  color: black;
+  font-size: 100px;
+  font-family: "Ysabeau Bold";
+  display: flex;
+}
+.mid_text {
+  color: black;
+  font-size: 30px;
+  font-family: "opensans regular";
+  display: flex;
+}
+.text {
+  color: black;
+  font-size: 20px;
+  font-family: "OpenSans-Regular";
+  display: flex;
+}
+.illustration_142 {
+  width: 10%;
+}
+.article_page_quote .part_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 5%;
+}
+.article_page_quote {
+  background-color: #d6e9ff;
+  padding: 2%;
+  margin-block-start: 5%;
+}
+@media (max-width: 576px) {
+  .article_page_quote {
+    max-width: 350px;
+  }
+}
+</style>
+

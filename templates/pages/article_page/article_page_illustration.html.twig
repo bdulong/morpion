@@ -1,0 +1,46 @@
+<div class="article_page_illustration">
+    <img class="illustration_17" src={{ asset('images/img16.png') }} />
+</div>
+
+<style>
+@font-face {
+font-family: "Ysabeau Bold";
+src: {{ asset('../typo/Ysabeau-Bold.ttf') }};
+}
+@font-face {
+font-family: "OpenSans-Regular";
+src: {{ asset('../typo/OpenSans-Regular.ttf') }};
+}
+.title {
+  color: black;
+  font-size: 100px;
+  font-family: "Ysabeau Bold";
+  display: flex;
+}
+.mid_text {
+  color: black;
+  font-size: 30px;
+  font-family: "opensans regular";
+  display: flex;
+}
+.text {
+  color: black;
+  font-size: 20px;
+  font-family: "OpenSans-Regular";
+  display: flex;
+}
+.article_page_illustration {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+@media (max-width: 576px) {
+  .article_page_illustration {
+    max-width: 350px;
+  }
+}
+</style>
+
+
+

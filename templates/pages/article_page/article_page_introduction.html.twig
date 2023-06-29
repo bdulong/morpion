@@ -1,0 +1,77 @@
+    <div class="article_page_introduction">
+      <div class="part1 text">
+        <p>publié le 29 mai</p>
+        <p>Timer</p>
+      </div>
+      <div class="part2">
+        <h1 class="title_11 title">Le futur est mort.Vive le futur !</h1>
+        <p class="text_11 text">
+          De nombreux jeunes ressentent une appréhension face à l'avenir en
+          raison du caractère volatile et incertain du monde actuel. Ce
+          sentiment est répandu et préoccupant.
+        </p>
+        <div class="author_article text">
+          <img class="profile_picture_article" src={{ asset('images/img19.svg') }} />
+          <p>Grégoire Charassin</p>
+        </div>
+      </div>
+    </div>
+
+    <style>
+  @font-face {
+    font-family: "Ysabeau Bold";
+    src: {{ asset('../typo/Ysabeau-Bold.ttf') }};
+  }
+  @font-face {
+    font-family: "OpenSans-Regular";
+    src: {{ asset('../typo/OpenSans-Regular.ttf') }};
+  }
+.title {
+  color: black;
+  font-size: 100px;
+  font-family: "Ysabeau Bold";
+  display: flex;
+}
+.mid_text {
+  color: black;
+  font-size: 30px;
+  font-family: "opensans regular";
+  display: flex;
+}
+.text {
+  color: black;
+  font-size: 20px;
+  font-family: "OpenSans-Regular";
+  display: flex;
+}
+
+.article_page_introduction {
+  margin-block-start: 5%;
+}
+.part1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+}
+.part2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+.profile_picture_article {
+  width: 4%;
+}
+.author_article {
+  gap: 2%;
+}
+@media (max-width: 576px) {
+  .article_page_introduction {
+    max-width: 350px;
+  }
+} 
+    </style>
+
+
+
+

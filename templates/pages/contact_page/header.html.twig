@@ -1,0 +1,63 @@
+<ul class="header">
+    <li><a href="index.html"><img src="{{ asset('images/logo_header.svg') }}" width="100px"></a></li>
+    <li class="liens_header"><a href="interviews.html">Interviews</a></li>
+    <li class="liens_header"><a href="actualités.html">Actualités</a></li>
+    <li class="liens_header"><a href="projets.html">Projets</a></li>
+    <li class="icone_header" style="float:right"><a href="recherche.html"><img src="{{ asset('images/recherche.svg') }}" height="20px" width="20px"></a></li>
+    <li class="icone_header" style="float:right"><a href="contact.html"><img src="{{ asset('images/contact.svg') }}" height="20px" width="20px"></a></li>
+</ul>
+
+<style>
+
+body{
+    margin: 0;
+}
+
+.header {
+  margin-top: 0; /* Supprime la marge supérieure */
+  position: relative; /* Définit le positionnement relatif */
+  z-index: 1; /* Définit un index de position pour l'en-tête */
+}
+
+ul {
+    position: fixed;
+    top: 1;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #3C5180;
+    z-index: 1;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 32px;
+    text-decoration: none;  
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #222f4a;
+  }
+  
+  .active {
+    background-color: #222f4a;
+  }
+
+.liens_header {
+    margin-top: 7px;
+    font-size: 16px;
+    font-family: 'OpenSans-Regular';
+}
+
+.icone_header {
+    margin-top: 7px;
+}
+</style>
