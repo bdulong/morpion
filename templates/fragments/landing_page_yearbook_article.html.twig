@@ -1,0 +1,80 @@
+
+<div class="landing_page_yearbook_article">
+    <div class="container">
+      <div class="ybimage">
+        <img src= {{ asset('img/img5.png"') }} alt="image d'interview" />
+      </div>
+      <div class="section-text">
+        <h1 class="ybtitle title">YEARBOOK</h1>
+        <p class="textyb text">
+          Le Yearbook est une compilation précieuse d'articles rédigés par les
+          étudiants, regroupant des interviews, des projets et des actualités.
+          Il offre une plateforme pour mettre en lumière les réalisations et
+          les contributions remarquables de la communauté étudiante d'Hetic.
+          En référençant les articles issus d'interviews approfondies, le
+          Yearbook donne aux lecteurs un aperçu unique des perspectives, des
+          idées et des expériences des étudiants. En mettant en avant les
+          projets des étudiants, il célèbre l'innovation, la créativité et
+          l'expertise technique développées au sein de l'établissement. Enfin,
+          en présentant des actualités, le Yearbook garde les lecteurs
+          informés des événements et des développements pertinents au sein de
+          la communauté Hetic. C'est un témoignage vivant de l'esprit
+          dynamique et de l'engagement intellectuel qui caractérisent Hetic.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <style>
+
+@font-face {
+    font-family: "Ysabeau Bold";
+    src: {{ asset('../typo/Ysabeau-Bold.ttf') }};
+  }
+  @font-face {
+    font-family: "OpenSans-Regular";
+    src: {{ asset('../typo/OpenSans-Regular.ttf') }};
+  }
+  .title {
+    color: black;
+    font-size: 100px;
+    font-family: "Ysabeau Bold";
+    display: flex;
+  }
+  .mid_text {
+    color: black;
+    font-size: 30px;
+    font-family: "opensans regular";
+    display: flex;
+  }
+  .text {
+    color: black;
+    font-size: 20px;
+    font-family: "OpenSans-Regular";
+    display: flex;
+  }
+    .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-block-start: 10%;
+  width: 100%;
+}
+.section-text {
+  width: 50%;
+  font-size: 25;
+  background-color: #d6e9ff;
+  padding-left: 20%;
+  padding-bottom: 5%;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+.ybimage {
+  width: 50%;
+}
+@media (max-width: 576px) {
+  .landing_page_yearbook_article {
+    max-width: 350px;
+  }
+}
+  </style>

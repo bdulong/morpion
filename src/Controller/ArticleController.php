@@ -13,6 +13,17 @@ use Symfony\Component\Routing\Annotation\Route;
 #[Route('/article')]
 class ArticleController extends AbstractController
 {
+    #[Route('/overview', name: 'model_article_overview_page', methods: ['GET'])]
+    public function model_article_overview_page(): Response
+    {
+        /*
+        return $this->render('pages/model_article_overview_page/index.html.twig', [
+            'controller_name' => 'model_article_overview_page',
+        ]);
+        */
+        return new Response("hello");
+    }
+
     #[Route('/', name: 'app_article_index', methods: ['GET'])]
     public function index(ArticleRepository $articleRepository): Response
     {

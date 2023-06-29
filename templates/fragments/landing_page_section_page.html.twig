@@ -1,0 +1,79 @@
+    <div class="landing_page_section_choice">
+      <div class="recent">
+        <div class="recentimage">
+          <img src={{ asset('img/img1.png') }} alt="lien article recent">
+        </div>
+        <div class="recenttexte mid_text">
+          <h1>Projets recents</h1>
+        </div>
+      </div>
+      <div class="projets">
+        <div class="projetsimage">
+          <img src= {{ asset('img/img4.png ') }} alt="lien article interview">
+        </div>
+        <div class="projetstexte mid_text">
+          <h1>Projets</h1>
+        </div>
+      </div>
+      <div class="interview">
+        <div class="interviewimage">
+          <img src={{ asset('img/img3.png') }} alt="lien article news">
+        </div>
+        <div class="interviewtexte mid_text">
+          <h1>Interview</h1>
+        </div>
+      </div>
+      <div class="news">
+        <div class="newsimage">
+          <img src={{ asset('img/img2.png') }} alt="lien article projets">
+        </div>
+        <div class="newstexte mid_text">
+          <h1>News</h1>
+        </div>
+      </div>
+    </div>
+
+    <style>
+  
+  @font-face {
+    font-family: "Ysabeau Bold";
+    src: {{ asset('../typo/Ysabeau-Bold.ttf') }};
+  }
+  @font-face {
+    font-family: "OpenSans-Regular";
+    src: {{ asset('../typo/OpenSans-Regular.ttf') }};
+  }
+  .title {
+    color: black;
+    font-size: 100px;
+    font-family: "Ysabeau Bold";
+    display: flex;
+  }
+  .mid_text {
+    color: black;
+    font-size: 30px;
+    font-family: "opensans regular";
+    display: flex;
+  }
+  .text {
+    color: black;
+    font-size: 20px;
+    font-family: "OpenSans-Regular";
+    display: flex;
+  }
+  
+  /*landing_page_section_choice*/
+  .landing_page_section_choice {
+    margin-block-start: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  @media (max-width: 576px) {
+    .landing_page_section_choice {
+      max-width: 350px;
+    }
+  }
+    </style>

@@ -1,0 +1,53 @@
+<div class="article_page_quote2">
+    <img class="illustration_15" src={{ asset('img/img13.png') }} />
+    <h2 class="quote_15 mid_text">
+    Nous pouvons donc affirmer que les temps sont durs.
+    </h2>
+</div>
+
+<style>
+@font-face {
+font-family: "Ysabeau Bold";
+src: {{ asset('../typo/Ysabeau-Bold.ttf') }};
+}
+@font-face {
+font-family: "OpenSans-Regular";
+src: {{ asset('../typo/OpenSans-Regular.ttf') }};
+}
+.title {
+  color: black;
+  font-size: 100px;
+  font-family: "Ysabeau Bold";
+  display: flex;
+}
+.mid_text {
+  color: black;
+  font-size: 30px;
+  font-family: "opensans regular";
+  display: flex;
+}
+.text {
+  color: black;
+  font-size: 20px;
+  font-family: "OpenSans-Regular";
+  display: flex;
+} 
+.article_page_quote2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5%;
+  background-color: #d6e9ff;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+@media (max-width: 576px) {
+  .article_page_quote2 {
+    max-width: 350px;
+  }
+}
+</style>
+
+    {{ asset('images/logo_header.svg') }}

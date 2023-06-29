@@ -1,0 +1,74 @@
+<div class="article_page_author">
+  <img class="line_27" src={{ asset('images/img17.png') }} />
+  <div class="author1">
+    <div class="author_description1">
+      <h4 class="author_name27 mid_text">Grégoire Charrassin</h4>
+      <p class="text">
+        Co-fondateur du Design Fiction Studio, Web & Graphic Designer
+        indépendant et Intervenant
+      </p>
+    </div>
+    <img class="author_271" src={{ asset('images/img19.svg') }} />
+  </div>
+  <div class="author2">
+  <div class="author_description2">
+    <h4 class="author_name271 mid_text">Adrien Rivierre</h4>
+    <p class="text">
+      Fondateur de Résonances et Narratopia Co-fondateur du Design Fiction
+      Studiot
+    </p>
+  </div>
+  <img class="author_272" src={{ asset('images/img19.png') }} />
+</div>
+
+<style>
+@font-face {
+font-family: "Ysabeau Bold";
+src: {{ asset('polices/Ysabeau-Bold.ttf') }};
+}
+@font-face {
+font-family: "OpenSans-Regular";
+src: {{ asset('polices/OpenSans-Regular.ttf') }};
+}
+.title {
+  color: black;
+  font-size: 100px;
+  font-family: "Ysabeau Bold";
+  display: flex;
+}
+.mid_text {
+  color: black;
+  font-size: 30px;
+  font-family: "OpenSans-Regular";
+  display: flex;
+}
+.text {
+  color: black;
+  font-size: 20px;
+  font-family: "OpenSans-Regular";
+  display: flex;
+}
+.article_page_author {
+  display: flex;
+  flex-direction: column;
+}
+.author_description1 {
+  display: flex;
+  flex-direction: column;
+}
+.author_description2 {
+  display: flex;
+  flex-direction: column;
+}
+.author1 {
+  display: flex;
+  flex-direction: row;
+}
+.author2 {
+  display: flex;
+  flex-direction: row;
+}
+
+</style>
+
+{{ asset('images/logo_header.svg') }}

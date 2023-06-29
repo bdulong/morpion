@@ -1,0 +1,110 @@
+    <div class="footer">
+      <div class="part_1">
+        <div class="section1">
+          <img src={{ asset('img/img6.png') }} />
+        </div>
+        <div class="section2">
+          <p class="legende1">Decouvrir</p>
+          <p>News</p>
+          <p>Projets</p>
+          <p>Interviews</p>
+        </div>
+        <div class="section3">
+          <p class="legende2">Pour aller plus loin</p>
+          <p>A propos</p>
+          <p>Contact</p>
+          <p>Hetic.net</p>
+        </div>
+        <div class="section4">
+          <img src={{ asset('img/img7.png') }} />
+        </div>
+      </div>
+      <div class="section5"></div>
+      <div class="part_2">
+          <div class="line">
+            <img src={{ asset('img/img8.png') }} />
+          </div>
+          <div class="textfooter">
+            <p>Mentions légales</p>
+            <p>Confidentialité et Cookies</p>
+            <p>Copyright</p>
+            <p>Accessibilité</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+  @font-face {
+    font-family: "Ysabeau Bold";
+    src: {{ asset('../typo/Ysabeau-Bold.ttf') }};
+  }
+  @font-face {
+    font-family: "OpenSans-Regular";
+    src: {{ asset('../typo/OpenSans-Regular.ttf') }};
+  }
+.title {
+  color: black;
+  font-size: 100px;
+  font-family: "Ysabeau Bold";
+  display: flex;
+}
+.mid_text {
+  color: black;
+  font-size: 30px;
+  font-family: "opensans regular";
+  display: flex;
+}
+.text {
+  color: black;
+  font-size: 20px;
+  font-family: "OpenSans-Regular";
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #34476f;
+  padding: 2%;
+  
+}
+.footer .part_1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 2%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+}
+.textfooter {
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.footer .section2 {
+  color: rgb(255, 255, 255);
+}
+.footer .section3 {
+  color: rgb(255, 255, 255);
+}
+.footer .section5 {
+  color: #9e9e9e;
+}
+.line {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 576px) {
+  .footer {
+    max-width: 350px;
+  }
+} 
+    </style>
+    
