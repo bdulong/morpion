@@ -14,5 +14,3 @@ document.addEventListener('DOMContentLoaded', function() {
         jeu.style.display = 'none';
     });
 });
-
-//insérer chargement
